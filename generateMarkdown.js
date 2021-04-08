@@ -1,4 +1,4 @@
-let renderLicenseSection = function (license) {
+function renderLicenseSection(license) {
     let licenseBadge = "";
         switch (license) {
           case 'MIT':
@@ -21,3 +21,5 @@ let renderLicenseSection = function (license) {
         }
         return licenseBadge;
     }
+
+    module.exports = renderLicenseSection;

@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const generateMarkdown = require('./generateMarkdown');
+const renderLicenseSection = require('./generateMarkdown');
 const fs = require('fs');
 
 inquirer
@@ -69,7 +69,7 @@ inquirer
 
   .then((response) => {
 let readmeString = `# ${response.title}
-${generateMarkdown.renderLicenseSection(response.license)}
+${renderLicenseSection(response.license)}
 ### Description
 ${response.description}
 

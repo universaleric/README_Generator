@@ -1,5 +1,5 @@
 # README Generator
-
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ### Description
 This is an application to help the user quickly generate a README file.
 
@@ -22,12 +22,12 @@ It can be a headache trying to remember everything you need to include in a READ
 
 ### Built With
 
-Javascript
+Javascript & Node.js
 
 <a name="installation"></a>
 ## Installation
 
-npm inquirer
+Inquirer
 
 <a name="usage"></a>
 ## Usage
@@ -63,7 +63,7 @@ This project is licensed under GPL_3.0.
 <a name="questions"></a>
 ## Questions
 
-Eric Hay - ericdanielhay@yahoo.com
+My name is Eric Hay and if you have any questions about this project, you can email me at ericdanielhay@yahoo.com.
 Link to project: github.universaleric
 
 <a name="acknowledgement"></a>
