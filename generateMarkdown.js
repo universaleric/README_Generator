@@ -1,4 +1,4 @@
-function renderLicenseSection(license) {
+let renderLicenseSection = function (license) {
     let licenseBadge = "";
         switch (license) {
           case 'MIT':
