@@ -132,7 +132,7 @@ This project is licensed under ${response.license}.
 <a name="questions"></a>
 ## Questions
 
-${response.name} - ${response.email}
+My name is ${response.name} and if you have any questions about this project, you can email me at ${response.email}.
 Link to project: github.${response.username}
 
 <a name="acknowledgement"></a>
