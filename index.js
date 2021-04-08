@@ -39,9 +39,10 @@ inquirer
       name: 'features',
     },
     {
-      type: 'input',
+      type: 'list',
       message: 'What license is this project licensed under?',
       name: 'license',
+      choices: ["MIT", "APACHE_2.0", "GPL_3.0", "BSD_3", "None"],
     },
     {
       type: 'input',
@@ -121,6 +122,8 @@ Contributions are what make the open source community such an amazing place to b
 <a name="test"></a>
 ## Testing
 
+To test, type "node index.js" into your terminal, answer the prompted questions, and then review the generated README file. 
+
 <a name="license"></a>
 ## License
 
@@ -136,8 +139,6 @@ Link to project: github.${response.username}
 ## Acknowledgements
 
 ${response.acknowledgements}`;
-
-
 
     fs.writeFile('README.md', readmeString, (err) =>
     err ? console.error(err) : console.log('Success!')
