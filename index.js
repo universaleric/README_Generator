@@ -55,8 +55,8 @@ inquirer
     },
     {
         type: 'input',
-        message: 'What is the link to this project?',
-        name: 'link',
+        message: 'What is your Github username?',
+        name: 'username',
     },
     {
         type: 'input',
@@ -64,74 +64,78 @@ inquirer
         name: 'acknowledgements',
     },
   ])
+
   .then((response) => {
-    let readmeString = `# ${response.title}
-    
-    ### Description
+let readmeString = `# ${response.title}
 
-    ${response.description}
+### Description
+${response.description}
 
-    ## Table of Contents
+## Table of Contents
 
-    [About This Project](#about)
-    [Installation](#installation)
-    [Usage](#usage)
-    [Roadmap](#features)
-    [Contributing](#contributing)
-    [License](#license)
-    [Contact](#contact)
-    [Acknowledgements](#acknowledgement)
+- [About This Project](#about)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#features)
+- [Contributing](#contributing)
+- [Testing](#test)
+- [License](#license)
+- [Questions](#questions)
+- [Acknowledgements](#acknowledgement)
 
-    <a name="about"></a>
-    ## About This Project
+<a name="about"></a>
+## About This Project
 
-    ${response.about}
+${response.about}
 
-    ### Built With
+### Built With
 
-    ${response.built}
+${response.built}
 
-    <a name="installation"></a>
-    ## Installation
+<a name="installation"></a>
+## Installation
 
-    ${response.dependencies}
+${response.dependencies}
 
-    <a name="usage"></a>
-    ## Usage
+<a name="usage"></a>
+## Usage
 
-    ${response.usage}
+${response.usage}
 
-    <a name="features"></a>
-    ## Roadmap
+<a name="features"></a>
+## Roadmap
 
-    ${response.features}
+${response.features}
 
-    <a name="contributing"></a>
-    ## Contributing
+<a name="contributing"></a>
+## Contributing
 
-    Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-    1. Fork the Project
-    2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-    3. Commit your Changes (git commit -m 'Add some AmazingFeature')
-    4. Push to the Branch (git push origin feature/AmazingFeature)
-    5. Open a Pull Request
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
-    <a name="license"></a>
-    ## License
+<a name="test"></a>
+## Testing
 
-    This project is licensed under ${response.license}.
+<a name="license"></a>
+## License
 
-    <a name="contact"></a>
-    ## Contact
+This project is licensed under ${response.license}.
 
-    ${response.name} - ${response.email}
-    Link to project: ${response.link}
+<a name="questions"></a>
+## Questions
 
-    <a name="acknowledgement"></a>
-    ## Acknowledgements
+${response.name} - ${response.email}
+Link to project: github.${response.username}
 
-    ${response.acknowledgements}`;
+<a name="acknowledgement"></a>
+## Acknowledgements
+
+${response.acknowledgements}`;
 
 
 
