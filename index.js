@@ -68,7 +68,7 @@ inquirer
 
   .then((response) => {
 let readmeString = `# ${response.title}
-
+${renderLicenseSection(response.license)}
 ### Description
 ${response.description}
 
